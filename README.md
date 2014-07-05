@@ -6,16 +6,16 @@ in NuttX OS.
 
 Usage example
 -------------
-$ ./png2nuttx image.png
-$ ls
 
-image.png image.png.bin ...
+    $ ./png2nuttx image.png
+    $ ls
+    image.png image.png.bin ...
 
 Dependencies
 ------------
 
 Utility makes use of LodePNG library from http://lodev.org/lodepng.
-Sources are included in the /lib/ folder. Don't need to do anything
+Sources are included in the */lib* folder. Don't need to do anything
 about that.
 
 Details
