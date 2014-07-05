@@ -25,7 +25,7 @@ Pixels are being extracted from *.png* and saved into the file with
 the same name but with .bin added at the end. Format is absolutely raw,
 every 16 bits describes color of one pixel. No metadata at all.
 
-Formats that can be exported to with GIMP are all too complicated
+Formats that can be exported using GIMP are all too complicated
 and BMP is a total mess. PNG is nice but the only interesting library
 I have found, called LodePNG, works with NuttX but doesn't support
 reading row by row. Without it, the limited amount of memory in
