@@ -1,7 +1,7 @@
-Purpose
+png2nuttx
 ---------
 
-Utility extracts pixel data from *.png* images allowing to use them
+Utility extracts pixels from *.png* images, allowing to use them
 in NuttX OS.
 
 Usage example
