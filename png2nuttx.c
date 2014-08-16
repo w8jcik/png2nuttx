@@ -12,6 +12,7 @@ int decodeOneStep(const char* filename)
   unsigned width, height;
   
   int16_t *pixels;
+  char cut_filename[64];
   char derived_filename[64];
 
   int i;
@@ -28,13 +29,20 @@ int decodeOneStep(const char* filename)
     return(-1);
   }
   
-  
   for (i = 0; i < width * height; i += 1) {
     pixels[i] = RGB565(image[i*3]/8, image[i*3+1]/4, image[i*3+2]/8);
   }
-
-  sprintf(derived_filename, "%s.bin", filename);
-
+  
+  strncpy(cut_filename, filename, strlen(filename)-4);
+  
+  // sometimes \0 is missing, contrary to the specification 
+  
+  cut_filename[strlen(filename)-4] = '\0';
+  
+  sprintf(derived_filename, "%s.rgb", cut_filename);
+  
+  printf("Saving as %s\n", derived_filename);
+  
   write_ptr = fopen(derived_filename, "wb");
 
   fwrite(pixels, sizeof(pixels), (width * height)/2, write_ptr);
