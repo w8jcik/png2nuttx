@@ -38,9 +38,7 @@ Preserving dimensions
 ---------------------
 
 In order to keep format simple, image dimensions are being saved
-in the file name
-
-    image.png → image-320x240.rgb.
+in the file name *image.png → image-320x240.rgb*.
 
 It can be easily parsed in NuttX with the following line
 
