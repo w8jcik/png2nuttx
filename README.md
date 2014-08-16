@@ -39,3 +39,7 @@ Preserving dimensions
 
 In order to keep format simple, image dimensions are being saved
 in the filename image.png -> image-320x240.rgb.
+
+Can be easily parsed with the following line
+
+    sscanf(strrchr(path, '-'), "-%dx%d.rgb", &width, &height);
