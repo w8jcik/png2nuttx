@@ -38,8 +38,10 @@ Preserving dimensions
 ---------------------
 
 In order to keep format simple, image dimensions are being saved
-in the filename image.png -> image-320x240.rgb.
+in the file name
 
-Can be easily parsed with the following line
+    image.png → image-320x240.rgb.
+
+It can be easily parsed in NuttX with the following line
 
     sscanf(strrchr(path, '-'), "-%dx%d.rgb", &width, &height);
