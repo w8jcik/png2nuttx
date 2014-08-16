@@ -9,7 +9,7 @@ Usage example
 
     $ ./png2nuttx image.png
     $ ls
-    image.png image.png.bin ...
+    image.png image-320x240.rgb ...
 
 Dependencies
 ------------
@@ -33,3 +33,9 @@ microcontroller doesn't allow to process images larger than just
 a few rows.
 
 If we have to convert from civilized format raw data is perfect.
+
+Preserving dimensions
+---------------------
+
+In order to keep format simple, image dimensions are being saved
+in the filename image.png -> image-320x240.rgb.

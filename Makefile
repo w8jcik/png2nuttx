@@ -7,7 +7,7 @@ convert:
 	bin/png2nuttx examples/suka.png
 
 dump:
-	hexdump examples/suka.rgb
+	hexdump examples/suka-320x240.rgb
 
 test:
 	make clean

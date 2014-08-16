@@ -39,7 +39,7 @@ int decodeOneStep(const char* filename)
   
   cut_filename[strlen(filename)-4] = '\0';
   
-  sprintf(derived_filename, "%s.rgb", cut_filename);
+  sprintf(derived_filename, "%s-%dx%d.rgb", cut_filename, width, height);
   
   printf("Saving as %s\n", derived_filename);
   
